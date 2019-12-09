@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="draw_shapes_height">0dp</dimen>
+    <dimen name="imv_indicatorColor_width">100dp</dimen>
+    <dimen name="imv_indicatorColor_height">100dp</dimen>
+    <dimen name="item_tool_margin">8dp</dimen>
+    <dimen name="imv_tool_width">50dp</dimen>
+    <dimen name="imv_tool_height">50dp</dimen>
+</resources>

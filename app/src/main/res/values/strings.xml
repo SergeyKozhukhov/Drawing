@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Drawing</string>
+    <string name="help_text_multitouch_off">Режим multi-touch выключен</string>
+    <string name="help_text_multitouch_on">Режим multi-touch включен</string>
+    <string name="help_text_fill_stroke">Режим: сплошная заливка и контур</string>
+    <string name="help_text_fill">Режим: сплошная заливка</string>
+    <string name="help_text_stroke">Режим: контур</string>
+    <string name="btn_setColor_text">Выбрать цвет</string>
+</resources>

@@ -9,7 +9,6 @@ public class Tool {
     * idTool - id элемента
     * idImage - id иконки
     * */
-
     private int idTool;
     private int idImage;
 

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Класс фигуры "Ломанная фигура"
+ * Класс фигуры "Многоугольник"
  * */
 public class PolyShape extends PathLine {
 
@@ -93,7 +93,7 @@ public class PolyShape extends PathLine {
     }
 
     /*
-    * Приведение ломанной фигуры к точке
+    * Приведение многоугольника к точке
     * */
     public Point toPoint() {
         Point point = new Point(points.get(0).x, points.get(0).y);
@@ -105,7 +105,7 @@ public class PolyShape extends PathLine {
 
 
     /*
-     * Приведение ломанной фигуры к линии
+     * Приведение многоугольника к линии
      * */
     public Line toLine() {
         Line line = new Line(points.get(0).x, points.get(0).y);
@@ -118,7 +118,7 @@ public class PolyShape extends PathLine {
 
 
     /*
-     * Приведение ломанной фигуры к кривой линии
+     * Приведение многоугольника к кривой линии
      * */
     private PathLine toPathLine() {
         PathLine pathLine = new PathLine();
@@ -130,7 +130,7 @@ public class PolyShape extends PathLine {
     }
 
     /*
-     * Приведение ломанной фигуры к соответствующей более простой фигуре
+     * Приведение многоугольника к соответствующей более простой фигуре
      * */
     public Shape toSimpleShape() {
         int size = points.size();

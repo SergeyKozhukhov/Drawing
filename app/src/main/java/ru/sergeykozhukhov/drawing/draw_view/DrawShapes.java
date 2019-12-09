@@ -74,7 +74,7 @@ public class DrawShapes extends View {
     private Shape shape;
 
     /*
-     * "Ломанная фигура" для "multi-touch" режима
+     * "Многоугольник" для "multi-touch" режима
      * */
     private PolyShape polyShape;
 
@@ -153,7 +153,7 @@ public class DrawShapes extends View {
         if (shape != null) {
             shape.show(canvas, paintCurrent);
         }
-        // отображаем новую рисуемую "Ломанную фигуру" в режиме "multi-touch"
+        // отображаем новый рисуемый "Многоугольник" в режиме "multi-touch"
         if (polyShape != null)
             polyShape.show(canvas, paintCurrent);
     }
@@ -197,7 +197,7 @@ public class DrawShapes extends View {
     }
 
     /*
-     * Создание новой "Ломанной фигуры"
+     * Создание нового "Многоугольника"
      * */
     private void createNewPolyShape(float originX, float originY) {
         polyShape = new PolyShape(originX, originY);
@@ -246,13 +246,13 @@ public class DrawShapes extends View {
     }
 
     /*
-     * Получение новой "Ломанной фигуры" в режиме "multi-touch"
+     * Получение нового "Многоугольника" в режиме "multi-touch"
      * */
     private boolean setPolyShapeMultiTouch(MotionEvent event) {
 
         switch (event.getActionMasked()) {
             case ACTION_DOWN:
-                // создам новую "Ломанную фигуру" и устанавливаем начальную точку для первого пальца
+                // создам новый "Многоугольник" и устанавливаем начальную точку для первого пальца
                 createNewPolyShape(event.getX(), event.getY());
                 break;
             case ACTION_POINTER_DOWN:
@@ -268,7 +268,7 @@ public class DrawShapes extends View {
                 }
                 break;
             case ACTION_UP:
-                // добавялем более простую версию "Ломанной фигуру" в набор фигур/историю
+                // добавялем более простую версию "Многоугольник" в набор фигур/историю
                 shapes.add(polyShape.toSimpleShape());
                 polyShape = null;
                 break;
